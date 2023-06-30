@@ -1,0 +1,88 @@
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+
+
+void author(){
+printf("thanks for using this program\n");
+printf("Made by Ikkoc_awinata\n");
+}
+
+void judul(){
+printf("======================================\n");
+printf("\t KALKULATOR SEDERHANA \t\n");
+printf("======================================\n");
+}
+
+int main(){
+int a ,b, pilih, hasil;
+float hasil1;
+char masukan;
+
+//author();
+judul();
+printf("PILIH OPERATOR ARITMATIKA\n");
+printf("1. PENJUMLAHAN\n");
+printf("2. PENGURANGAN\n");
+printf("3. PERKALIAN\n");
+printf("4. PEMBAGIAN\n");
+printf("5. MODULUS\n");
+printf("\n");
+
+do{
+printf("========================================\n");
+printf("Masukkan angka pertama: ");
+scanf("%d", &a);
+
+printf("Masukkan angka kedua: ");
+scanf("%d", &b);
+printf("========================================\n");
+
+
+printf("Masukkan pilihan sesuai tabel anda: ");
+scanf("%d", &pilih);
+if(pilih == 1){
+hasil = a + b;
+printf("Hasil Penjumlahan %d + %d = %d\n", a, b, hasil);
+
+}
+else if (pilih == 2){
+hasil = a - b;
+printf("Hasil Pengurangan %d - %d = %d\n", a, b, hasil);
+
+
+}
+else if(pilih ==3){
+hasil = a * b;
+printf("Hasil Perkalian %d * %d = %d\n", a, b, hasil);
+}
+
+
+else if(pilih == 4){
+hasil1 = a/b;
+printf("Hasil Pembagian %d / %d = %d\n", a, b, hasil1);
+
+
+}
+else if (pilih == 5){
+hasil = a % b;
+printf("Hasil Modul %d %% %d = %d", a, b, hasil);
+
+
+}else
+printf("pilihan tidak sesuai\n");
+printf("\n");
+
+
+printf("==========================================\n");
+printf("mau coba lagi? ");
+scanf(" %c", &masukan);
+}
+while(masukan == 'Y' || masukan == 'y');
+
+author();
+}
+
+
+
+
