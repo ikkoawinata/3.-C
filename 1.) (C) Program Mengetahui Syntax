@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    printf("================================================\n");
+    printf("Belajar Mengetahui Tipe Data Dalam Syntax C\n");
+    printf("================================================\n\n");
+
+    printf("1. TIPE DATA INTEGER\n");
+    int data_integer = 5;
+    printf("   Data : %d\n", data_integer);
+    printf("   Bertipe : %s\n\n", "int");
+
+    printf("2. TIPE DATA FLOAT\n");
+    float data_float = 6.08;
+    printf("   Data : %f\n", data_float);
+    printf("   Bertipe : %s\n\n", "float");
+
+    printf("3. TIPE DATA STRING\n");
+    char data_string[] = "Ikko Cahya Awinata";
+    printf("   Data : %s\n", data_string);
+    printf("   Bertipe : %s\n\n", "char[]");
+
+    printf("4. TIPE DATA BOOLEAN (TRUE / FALSE)\n");
+    int data_bool = 1;
+    printf("   Data : %s\n", data_bool ? "true" : "false");
+    printf("   Bertipe : %s\n\n", "int");
+
+    return 0;
+}
