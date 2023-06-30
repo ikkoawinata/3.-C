@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+
+
+void author(){
+printf("thanks for using this program\n");
+printf("Made by Ikkoc_awinata\n");
+}
+
+void judul(){
+printf("==================================================\n");
+printf("   BELAJAR PERULANGAN WHILE MENGGUNAKAN PYTHON \n");
+printf("==================================================\n");
+}
+
+int main(){
+    int n = 1;
+
+judul();
+
+while (n <= 5){
+printf("Aku Sayang Kamu <3\n",&n);
+n++;
+}
+author();
+}
