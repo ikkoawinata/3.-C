@@ -1,0 +1,444 @@
+#include<stdio.h>
+#include<string.h>
+#include<math.h>
+
+void sambutan(){
+    printf( "======================================================================\n");
+    printf( "   S E L A M A T   D A T A N G   D I   P R O G R A M \n" );
+    printf( "  KUMPULAN RUMUS LUAS PERMUKAAN BANGUNAN DAN VOLUME\n" );
+    printf( "======================================================================\n");
+}
+
+void table(){
+    printf("================================================================================\n");
+    printf("A. R U M U S  K E L I L I N G  &  L U A S  B A N G U N  D A T A R \t\t \n");
+    printf("================================================================================\n");
+    printf("1. | Menghitung Keliling Lingkaran (JARI-JARI) (phi = 22/7)               \t|\n");
+    printf("2. | Menghitung Keliling Lingkaran (DIAMETER) (phi = 22/7)                \t|\n");
+    printf("3. | Menghitung Keliling Lingkaran (JARI-JARI) (phi = 3,14)               \t|\n");
+    printf("4. | Menghitung Keliling Lingkaran (DIAMETER) (phi = 3,14)                \t|\n");
+    printf("5. | Menghitung Panjang Busur pada Lingkaran                              \t|\n");
+    printf("6. | Menghitung Keliling Persegi                                          \t|\n");
+    printf("7. | Menghitung Luas Persegi                                              \t|\n");
+    printf("8. | Menghitung Keliling Persegi Panjang                                  \t|\n");
+    printf("9. | Menghitung Luas Persegi Panjang                                      \t|\n");
+    printf("10.| Menghitung Keliling Jajar Genjang                                    \t|\n");
+    printf("11.| Menghitung Luas Jajar Genjang                                        \t|\n");
+    printf("12.| Menghitung Keliling Segitiga                                         \t|\n");
+    printf("13.| Menghitung Luas Segitiga                                             \t|\n");
+    printf("14.| Menghitung Luas Belah Ketupat                                        \t|\n");
+    printf("15.| Menghitung Luas Trapesium                                            \t|\n");
+    printf("==============================================================================\n");
+    printf("B. R U M U S  L U A S  P E R M U K A A N  &  V O L U M E  B A N G U N  R U A N G\n");
+    printf("==============================================================================\n");
+    printf("16.| Menghitung Luas Kubus                                                \t|\n");
+    printf("17.| Menghitung Volume Kubus                                              \t|\n");
+    printf("18.| Menghitung Luas Balok                                                \t|\n");
+    printf("19.| Menghitung Volume Balok                                              \t|\n");
+    printf("20.| Menghitung Luas Permukaan Limas Segiempat                            \t|\n");
+    printf("21.| Menghitung Volume Limas Segiempat                                    \t|\n");
+    printf("22.| Menghitung Volume Prisma Segitiga                                    \t|\n");
+    printf("23.| Menghitung Luas Prisma Segitiga                                      \t|\n");
+    printf("24.| Menghitung Volume Limas Segitiga                                     \t|\n");
+    printf("25.| Menghitung Luas Selimut Tabung (Jari-Jari)                           \t|\n");
+    printf("26.| Menghitung Luas Selimut Tabung (diameter)                            \t|\n");
+    printf("27.| Menghitung Luas Permukaan Tabung (Jari-Jari)                         \t|\n");
+    printf("28.| Menghitung Volume Tabung (Jari-Jari)                                 \t|\n");
+    printf("29.| Menghitung Luas Selimut Kerucut                                      \t|\n");
+    printf("30.| Menghitung Luas Permukaan Kerucut                                    \t|\n");
+    printf("31.| Menghitung Volume Kerucut                                            \t|\n");
+    printf("32.| Menghitung Luas Bola                                                 \t|\n");
+    printf("33.| Menghitung Volume Bola                                               \t|\n");
+    printf("==============================================================================\n"); 
+}
+
+int main(){
+    char j;
+    float r,d,t,T, phi, Phi, rumusa, rumusb, jari, busur,sisi, keliling,L, panjang, lebar, alas,p,q, L_alas,L_segitiga,L_limas,LALAS,a,L_selimut,sisisegitiga,sqrt, akar,Lp_PS, rumus1, rumus2,rumus;
+    int pilihan, p1, L1, T1, rumusss, sisi1;
+
+    sambutan();
+    table();
+
+    do{
+        printf("Silahkan masukan pilihan anda yang sesuai [1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16/17/18/19/20/21/22/23/24/25/26/27/28/29/30/31/32/33] ? : " );
+        scanf("%d", &pilihan);
+
+        if (pilihan == 1){
+            printf(" ---- 1.) MENGHITUNG KELILING LINGKARAN (JARI-JARI) (phi = 22/7) ----\n");
+            printf("Masukkan jari-jari lingkaran: ");
+            scanf("%f", &r);
+            keliling = 2 * 22.0 / 7.0 * r;
+            printf("Rumusnya yaitu : Keliling = 2 * 22/7 * r = 2 * 22/7 * %f\n", r);
+            printf("Keliling lingkaran dengan jari-jari %.2f adalah %.2f cm \n", r, keliling);
+        }
+            
+        else if (pilihan == 2){
+            printf(" ---- 2.) MENGHITUNG KELILING LINGKARAN (DIAMETER) (phi = 22/7)  ----\n");
+            printf("Masukkan diameter lingkaran: ");
+            scanf("%f", &d);
+            keliling = 22.0 / 7.0 * d;
+            printf("Rumusnya yaitu : Keliling = 22/7 * d = 22/7 * %f\n", d);
+            printf("Keliling lingkaran dengan diameter %.2f adalah %.2f cm \n", d, keliling);
+        }
+
+        else if (pilihan == 3){
+            printf(" -----3.) MENGHITUNG KELILING LINGKARAN (JARI-JARI) (phi = 3,14) -----\n");
+            printf("Masukkan jari-jari lingkaran: ");
+            scanf("%f", &r);
+            keliling = 2 * 3.14 * r;
+            printf("Rumusnya yaitu : Keliling = 2 * 3.14 * r = 2 * 3.14 * %f\n", r);
+            printf("Keliling lingkaran dengan jari-jari %.2f adalah %.2f cm \n", r, keliling);
+    }
+
+            else if (pilihan == 4){
+            printf(" -----4.) MENGHITUNG KELILING LINGKARAN (DIAMETER) (phi = 3,14) -----\n");
+            printf("Masukkan diameter lingkaran: ");
+            scanf("%f", &d);
+            keliling = 3.14 * d;
+            printf("Rumusnya yaitu : Keliling = 3.14 * d = 3.14 * %f\n", d);
+            printf("Keliling lingkaran dengan diameter %.2f adalah %.2f cm \n", d, keliling);
+    }
+
+            else if (pilihan == 5){
+            printf(" ---- 5.) MENGHITUNG PANJANG BUSUR LINGKARAN -----\n");
+            printf("Masukkan busur lingkaran: ");
+            scanf("%f", &busur);
+            printf("Masukkan jari-jari atau diameter busur lingkaran : ");
+            scanf("%f", &r);
+            rumus1 =  busur/360.0 * 22.0/7.0 * r * 2; 
+            rumus2 =  busur/360.0 * 3.14 * r * 2; 
+            printf(" Rumus 1 (phi = 22/7) yaitu = busur/360*phi*r*2 = %.2f/ 360 * 22/7 * %.2f * 2 = %.2f cm \n", busur, r, rumus1);
+            printf(" Rumus 2 (phi = 3,14) yaitu = busur/360*phi*r*2 = %.2f / 360 * 3,14 * %.2f * 2 = %.2f cm \n", busur, r, rumus2);
+    }
+
+     else if (pilihan == 6){
+            printf("---- 6.) MENGHITUNG KELILING PERSEGI ----\n");
+            printf("Masukkan sisi persegi: ");
+            scanf("%f", &d);
+            keliling = 4 * d;
+            printf("Rumusnya yaitu : Keliling = 4 * sisi = 4 * %f\n", d);
+            printf("Keliling persegi dengan sisi %.2f adalah %.2f cm \n", d, keliling);
+    }
+
+     else if (pilihan == 7){
+            printf("---- 7.) MENGHITUNG LUAS PERSEGI ---\n");
+            printf("Masukkan sisi persegi: ");
+            scanf("%f", &d);
+            L = d * d;
+            printf("Rumusnya yaitu : Keliling = sisi * sisi = %f * %f\n",d, d);
+            printf("Luas persegi dengan sisi %.2f * sisi %.2f adalah %f cm \n",d, d, L);
+    }
+
+       else if (pilihan == 8){
+            printf("--- 8.) MENGHITUNG KELILING PERSEGI PANJANG ----\n");
+            printf("Masukkan panjang bangunan : ");
+            scanf("%f", &panjang);
+            printf("Masukkan lebar bangunan : ");
+            scanf("%f", &lebar);
+            keliling = 2 * (panjang + lebar);
+            printf("Rumusnya yaitu : Keliling = 2 * (panjang + lebar) = 2 * (%f + %f) = %f cm \n ", panjang, lebar, keliling);
+    }
+
+    else if (pilihan == 9){
+            printf("---- 9.) MENGHITUNG LUAS PERSEGI PANJANG ----\n");
+            printf("Masukkan panjang bangunan : ");
+            scanf("%f", &panjang);
+            printf("Masukkan lebar bangunan : ");
+            scanf("%f", &lebar);
+            L= (panjang * lebar);
+            printf("Rumusnya yaitu : Luas = panjang * lebar = %f * %f = %f cm \n ", panjang, lebar, L);
+    }
+
+        else if (pilihan == 10){
+            printf("---- 10.) MENGHITUNG KELILING JAJAR GENJANG ----\n");
+            printf("Masukkan panjang bangunan : ");
+            scanf("%f", &panjang);
+            printf("Masukkan lebar bangunan : ");
+            scanf("%f", &lebar);
+            keliling = 2 *(panjang + lebar);
+            printf("Rumusnya yaitu : keliling = 2 * (panjang + lebar) = 2 * (%f + %f) = %f cm\n", panjang, lebar, keliling);
+    }
+            else if (pilihan == 10){
+            printf("---- 10.) MENGHITUNG KELILING JAJAR GENJANG ----\n");
+            printf("Masukkan panjang bangunan : ");
+            scanf("%f", &panjang);
+            printf("Masukkan lebar bangunan : ");
+            scanf("%f", &lebar);
+            keliling = 2 *(panjang + lebar);
+            printf("Rumusnya yaitu : keliling = 2 * (panjang + lebar) = 2 * (%f + %f) = %f cm\n", panjang, lebar, keliling);
+    }
+
+            else if (pilihan == 11){
+            printf("----  11.) MENGHITUNG LUAS JAJAR GENJANG----\n");
+            printf("Masukkan alas bangunan : ");
+            scanf("%f", &alas);
+            printf("Masukkan tinggi bangunan : ");
+            scanf("%f", &t);
+            L = alas * t;
+            printf("Rumusnya yaitu : Luas = alas * tinggi = %f * %f = %f cm \n", alas, t, L);
+    }
+
+            else if (pilihan == 12){
+            printf("----  12.) MENGHITUNG KELILING SEGITIGA ----\n");
+            printf("Masukkan p : ");
+            scanf("%f", &p);
+            printf("Masukkan q: ");
+            scanf("%f", &q);
+            printf("Masukkan r: ");
+            scanf("%f", &r);
+            keliling = p + q + r;
+            printf("Rumusnya yaitu : Keliling = p + q + r = % f + %f + %f = %f cm \n", p,q,r, keliling);
+    }
+
+       else if (pilihan == 13){
+            printf("----  13.) MENGHITUNG LUAS SEGITIGA ----\n");
+            printf("Masukkan alas segitiga : ");
+            scanf("%f", &alas);
+            printf("Masukkan tinggi segitiga : ");
+            scanf("%f", &T);
+            L = 1.0/2.0 * alas * T;
+            printf("Rumusnya yaitu : Luas = 1/2 * alas * tinggi = 1/2 * %f * %f = %f cm \n", alas, T, L);
+    }
+       else if (pilihan == 14){
+            printf("---- 14.) MENGHITUNG LUAS BELAH KETUPAT ----\n");
+            printf("Masukkan diagonal 1 : ");
+            scanf("%f", &p);
+            printf("Masukkan diagonal 2 : ");
+            scanf("%f", &q);
+            L =  1.0/2.0 * p * q;
+            printf("Rumusnya yaitu : Luas = 1/2 * d1 * d2 = 1/2 * %f * %f = %f cm \n", p, q, L);
+       }
+
+        else if (pilihan == 15){
+            printf("---- 15.) MENGHITUNG LUAS TRAPESIUM----\n");
+            printf("Masukkan a : ");
+            scanf("%f", &p);
+            printf("Masukkan b : ");
+            scanf("%f", &q);
+            printf("Masukkan Tinggi : ");
+            scanf("%f", &t);
+            L =  (p+q)/2 * t;
+            printf("Rumusnya yaitu : Luas = (a+b)/2 * tinggi = (%f + %f)/2 * %f cm \n", p,q,t,L);
+    }
+        else if (pilihan == 16){
+            printf("---- 16.) MENGHITUNG LUAS KUBUS ----\n");
+            printf("Masukkan rusuk kubus : ");
+            scanf("%f", &r);
+            rumus =  6 * r * r;
+            printf("Rumusnya yaitu : Luas = 6 * rusuk * rusuk = 6 * %f * %f = %f cm\n", r,r, rumus);
+            
+    }
+
+
+    else if (pilihan == 17){
+            printf("---- 17.) MENGHITUNG VOLUME KUBUS ----\n");
+            printf("Masukkan rusuk kubus : ");
+            scanf("%f", &r);
+            rumus =  r * r * r;
+            printf("Rumusnya yaitu : Luas = r * rusuk * rusuk = %f * %f * %f = %f cm\n",r, r,r, rumus);
+    }
+
+      else if (pilihan == 18){
+            printf("---- 18.) MENGHITUNG LUAS BALOK ----\n");
+            printf("Masukkan panjang balok : ");
+            scanf("%d", &p1);
+            printf("Masukkan lebar balok : ");
+            scanf("%d", &L1);
+            printf("Masukkan tinggi balok : ");
+            scanf("%d", &T1);
+            rumusss =  2*(p1 * L1) + 2*(p1 * T1) + 2*(L1 * T1);
+            printf("Rumusnya yaitu : Luas = 2*(Panjang * lebar) + 2*(Panjang * tinggi) + 2*(lebar*tinggi) = 2 *(%d * %d) + 2 *(%d * %d) + 2 *(%d * %d) = %d cm \n", p1, L1,p1, T1,L1, T1, rumusss);
+    }
+
+     else if (pilihan == 19){
+            printf("---- 19.) MENGHITUNG VOLUME BALOK ----\n");
+            printf("Masukkan panjang balok : ");
+            scanf("%d", &p1);
+            printf("Masukkan luas alas balok : ");
+            scanf("%d", &L1);
+            printf("Masukkan tinggi balok : ");
+            scanf("%d", &T1);
+            rumusss =  p1 * L1 * T1;
+            printf("Rumusnya yaitu : Volume = Panjang * Luas Alas * Tinggi = %d * %d * %d = %d cm \n ", p1, L1, T1, rumusss);
+    }
+
+         else if (pilihan == 20){
+            printf("---- 20.) MENGHITUNG LUAS PERMUKAAN LIMAS SEGIEMPAT ----\n");
+            printf("Masukkan sisi alasnya : ");
+            scanf("%f",&sisi);
+            printf("Masukkan tinggi alas segitiga : ");
+            scanf("%f",&alas);
+            L_alas = sisi * sisi;
+            L_segitiga = 1.0/2.0 * sisi * alas;
+            L_limas =  (4 * L_segitiga) + L_alas;
+            printf("Rumusnya yaitu : Luas = (4 * Luas Segitiga) + Luas Alas = (4*%f) + %f = %f cm\n",L_segitiga, L_alas, L_limas);
+    }
+
+       else if (pilihan == 21){
+            printf("---- 21.) MENGHITUNG VOLUME LIMAS SEGIEMPAT ----\n");
+            printf("Masukkan luas alas limas : ");
+            scanf("%f",&LALAS);
+            printf("Masukkan tinggi alas limas : ");
+            scanf("%f",&T);
+            rumus =  1.0/3.0*LALAS*T;
+            printf("Rumusnya yaitu : Volume = 1/3 * Luas Alas * Tinggi = 1/3 * %f* %f = %f cm \n", LALAS, T, rumus);
+    }
+
+     else if (pilihan == 22){
+            printf("---- 22.) MENGHITUNG VOLUME PRISMA SEGITIGA ----\n");
+            printf("Masukkan a : ");
+            scanf("%f",&a);
+            printf("Masukkan t : ");
+            scanf("%f",&t);
+            printf("Masukkan T : ");
+            scanf("%f",&T);
+            LALAS = 1.0/2.0*a*t;
+            rumus = LALAS * T;
+            printf("Rumusnya yaitu : Volume = 1/2 * alas * tinggi * Tinggi = 1/2 * %f * %f * %f = %f cm \n", a, t, T, rumus); 
+    }
+     else if (pilihan == 23){
+            printf("---- 23.) MENGHITUNG LUAS PERMUKAAN PRISMA SEGITIGA----\n");
+            printf(" Lp Prisma Segitiga = Luas Selimut + Luas Alas\n"); 
+            printf("Masukkan panjang prisma : ");
+            scanf("%f",&panjang);
+            printf("Masukkan sisi  lebar segitiga : ");
+            scanf("%f",&lebar);
+            printf("Masukkan lebar prisma : ");
+            scanf("%f",&T);
+            sisisegitiga = pow(lebar,2) - pow (T,2);
+            printf("hasil sisi segitiga yang hasilnya berbentuk akar  :(%f pangkat 2)-(%f pangkat 2) = %f \n",lebar, T, sisisegitiga);
+            sqrt = pow(sisisegitiga, 0.5);
+
+            printf("Akar dari '%f' yaitu : %f \n", sisisegitiga, sqrt );
+            L_selimut = (panjang*lebar) + (panjang*T) +(panjang*sqrt);
+            printf("Luas selimutnya : (%f * %f) + ( %f * %f) + (%f *%f) = %f \n ",panjang,lebar,panjang,T,panjang,sqrt, L_selimut);
+            printf("\n");
+
+            printf("eittsss ini belum selesai.....tekan enter untuk melihat hasil Luas Permukaan Prisma Segitiga\n");
+            L_alas = 2*(1.0/2.0*sqrt*T);
+            Lp_PS = L_alas + L_selimut;
+            printf("Rumusnya yaitu : Luas = 2 * (1/2 * sisi segitiga * lebar) + (panjang * lebar ) + (panjang * lebar(sisi segitiga) + (panjang * tinggi)\n");
+            printf("               : Luas = 2 * (1/2 * %f * %f) + (%f * %f ) + (%f * %f(sisi segitiga) + (%f * %f) = %f\n", sqrt, T, panjang, lebar, panjang,sisisegitiga, panjang, sqrt, Lp_PS);
+            printf("Jadi total keseluruhan luas permukaan prisma segitiga adalah %f \n", Lp_PS);
+    }
+
+     else if (pilihan == 24){
+            printf("---- 24.) MENGHITUNG VOLUME LIMAS SEGITIGA ----\n");
+            printf("Masukkan alas limas segitiga : ");
+            scanf("%f",&a);
+            printf("Masukkan Tinggi limas segitiga : ");
+            scanf("%f",&t);
+            printf("Masukkan tinggi alas limas : ");
+            scanf("%f",&T);
+            rumus = 1.0/3.0*a*T*t;
+            printf("Rumusnya yaitu : 1/3 *a*T*t = 1/3 * %f * %f * %f = %f cm\n",a,t,T,rumus);
+    }
+
+     else if (pilihan == 25){
+            printf("---- 25.) MENGHITUNG LUAS SELIMUT TABUNG (JARI-JARI)----\n");
+            printf("Masukkan jari jari tabung : ");
+            scanf("%f",&r);
+            printf("Masukkan tinggi tabung : ");
+            scanf("%f",&T);
+            rumus1 = 2*22.0/7.0*r*T;
+            rumus2 = 2*(3.14*r)*T;
+            printf("hasil luas selimut (phi=22/7) : 2 * 22/7*r*tinggi = 2 * 22/7 * %f * %f = %f cm \n", r,T, rumus1);
+            printf("hasil luas selimut (phi=3,14) : 2 * 3,14*r*tinggi = 2 * 3,14 * %f * %f = %f cm \n", r,T, rumus2);
+    }
+       else if (pilihan == 26){
+            printf("----26.) MENGHITUNG LUAS SELIMUT TABUNG (DIAMETER)----\n");
+            printf("Masukkan diameter tabung : ");
+            scanf("%f",&d);
+            printf("Masukkan tinggi tabung : ");
+            scanf("%f",&T);
+            rumus1 = 22.0/7.0*d*T;
+            rumus2 = 3.14*d*T;
+            printf("hasil luas selimut (phi=22/7) : 22/7*d*tinggi = 22/7 * %f * %f = %f cm \n", d,T, rumus1);
+            printf("hasil luas selimut (phi=3,14) : 3,14*d*tinggi = 3,14 * %f * %f = %f cm \n", d,T, rumus2);
+    }
+
+    else if (pilihan == 27){
+            printf("---- 27.) MENGHITUNG LUAS PERMUKAAN TABUNG (JARI-JARI)----\n");
+            printf("Masukkan jari-jari tabung : ");
+            scanf("%f",&r);
+            printf("Masukkan tinggi tabung : ");
+            scanf("%f",&T);
+            rumus1 = 2*22.0/7.0*r*(r+T);
+            rumus2 = 2*3.14*r*(r+T);
+            printf("hasil luas selimut (phi=22/7) : 2 * (22/7*r) + (r+tinggi) = 2 * (22/7 * %f) + (%f + %f ) = %f cm\n",r,r,T,rumus1);
+            printf("hasil luas selimut (phi=3,14) : 2 * (3,14*r) + (r+tinggi) = 2 * (3,14 * %f) + (%f + %f ) = %f cm\n",r,r,T,rumus2);
+    }
+
+     else if (pilihan == 28){
+            printf("----28.) MENGHITUNG VOLUME TABUNG (JARI-JARI)----\n");
+            printf("Masukkan jari-jari tabung : ");
+            scanf("%f",&r);
+            printf("Masukkan tinggi tabung : ");
+            scanf("%f",&T);
+            rumus1 = 22.0/7.0*pow(r,2)*T;
+            rumus2 = 3.14*pow(r,2)*T;
+            printf("hasil luas selimut (phi=22/7) : 22/7 * (r pangkat 2) * Tinggi = %f * %f = %f cm\n", pow(r,2), T, rumus1);
+            printf("hasil luas selimut (phi=3,14) : 3,14 * (r pangkat 2) * Tinggi = %f * %f = %f cm\n", pow(r,2), T, rumus2);
+    }
+     else if (pilihan == 29){
+            printf("----29.) MENGHITUNG LUAS SELIMUT KERUCUT----\n");
+            printf("Masukkan jari-jari kerucut : ");
+            scanf("%f",&r);
+            printf("Masukkan sisi kerucut : ");
+            scanf("%f",&sisi);
+            rumus1 = 22.0/7.0*r*sisi;
+            rumus2 = 3.14*r*sisi;
+            printf("hasil luas selimut (phi=22/7) : 22/7 * r * sisi =22/7 *  %f * %f = %f cm\n",r,sisi, rumus1);
+            printf("hasil luas selimut (phi=3.14) : 3.14 * r * sisi =3.14 *  %f * %f = %f cm\n",r,sisi, rumus2);
+    }
+     else if (pilihan == 30){
+            printf("---- 30.) MENGHITUNG LUAS PERMUKAAN KERUCUT----\n");
+            printf("Masukkan jari-jari kerucut : ");
+            scanf("%f",&r);
+            printf("Masukkan sisi kerucut : ");
+            scanf("%f",&sisi);
+            rumus1 = (22.0/7.0*r*sisi) + (22.0/7.0*(pow(r,2)));
+            rumus2 = (3.14*r*sisi) + (3.14*(pow(r,2)));
+            printf("hasil luas selimut (phi=22/7) : (22/7 * r * sisi) + (22/7 *(r pangkat 2)) =(22/7 * %f * %f) + (22/7 *(%f)) = %f\n", r,sisi, pow(r,2), rumus1);
+           printf("hasil luas selimut (phi=3.14) : (3.14 * r * sisi) + (3.14 *(r pangkat 2)) =(3.14 * %f * %f) + (3.14 *(%f)) = %f\n", r,sisi, pow(r,2), rumus2);
+        
+    }
+       else if (pilihan == 31){
+            printf("---- 31.) MENGHITUNG VOLUME KERUCUT----\n");
+            printf("Masukkan jari-jari kerucut : ");
+            scanf("%f",&r);
+            printf("Masukkan sisi kerucut : ");
+            scanf("%f",&sisi);
+            rumus1 = (22.0/7.0*r*sisi) + (22.0/7.0*(pow(r,2)));
+            rumus2 = (3.14*r*sisi) + (3.14*(pow(r,2)));
+            printf("hasil luas selimut (phi=22/7) : (22/7 * r * sisi) + (22/7 *(r pangkat 2)) =(22/7 * %f * %f) + (22/7 *(%f)) = %f\n", r,sisi, pow(r,2), rumus1);
+           printf("hasil luas selimut (phi=3.14) : (3.14 * r * sisi) + (3.14 *(r pangkat 2)) =(3.14 * %f * %f) + (3.14 *(%f)) = %f\n", r,sisi, pow(r,2), rumus2);
+    }
+     else if (pilihan == 32){
+            printf("---- 32.) MENGHITUNG LUAS BOLA----\n");
+            printf("Masukkan jari-jari bola : ");
+            scanf("%f",&r);
+            rumus1 = 4*22.0/7.0*pow(r,2);
+            rumus2 = 4*3.14*pow(r,2);
+            printf("hasil luas selimut (phi=22/7) : 4 * 22/7 *(r pangkat 2) = 4 * 22/7 * %f = %f cm\n", pow(r,2), rumus1);
+           printf("hasil luas selimut (phi=3.14) : 4 * 3.14 *(r pangkat 2) = 4 * 3.14 * %f = %f cm\n", pow(r,2), rumus2);
+    }
+     else if (pilihan == 33){
+            printf("---- 33.) MENGHITUNG VOLUME BOLA----\n");
+            printf("Masukkan jari-jari bola : ");
+            scanf("%f",&r);
+            rumus1 = 4.0/3.0*22.0/7.0*pow(r,3);
+            rumus2 = 4.0/3.0*3.14*pow(r,3);
+            printf("hasil luas selimut (phi=22/7) : 4/3 * 22/7 *(r pangkat 2) = 4/3 * 22/7 * %f = %f cm\n", pow(r,3), rumus1);
+           printf("hasil luas selimut (phi=3.14) : 4/3 *  3.14 *(r pangkat 2) = 4/3 * 3.14 * %f = %f cm\n", pow(r,3), rumus2);
+     }else
+    printf("Pilihan tidak sesuai. silahkan pilih sesuai dengan table\n");
+    printf("coba lagi ? [Y/N] : " );
+    scanf("%s", &j);
+    printf("");
+    }
+    while ( j == 'Y' || j == 'y');
+    printf("Terima kasih telat memakai program ini\n");
+    printf("Made by Ikkoc_awinata");
+}
