@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<math.h>
+
+
+void welcome(){
+printf("===========================================================\n");
+printf("S E L A M A T  D A T A N G  D I  P R O G R A M \n");
+printf("              MENCARI NILAI TERBESAR \n");
+printf("===========================================================\n");
+}
+
+int main(){
+    int a,b,c, maks;
+    char j;
+    welcome();
+
+
+do {
+    printf("Masukkan nilai integer 1 : ");
+    scanf("%d",&a);
+    printf("Masukkan nilai integer 2 : ");
+    scanf("%d",&b);
+    printf("Masukkan nilai integer 2 : ");
+    scanf("%d",&c);
+
+    if (a > b ){
+      maks = a;
+    }
+    else{
+    maks = b;
+    }
+
+    if (c > maks){
+    maks = c;
+    }
+    printf("nilai terbesarnya adalah %d\n",maks);
+printf("=================================================\n");
+printf("mau coba lagi ? [Y/N] ");
+scanf("%s", &j);
+printf("=================================================\n");
+}
+while (j == 'Y' || j == 'y');
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+printf("Terima kasih telat memakai program ini\n");
+printf("          Made by Ikkoc_awinata\n");
+}
