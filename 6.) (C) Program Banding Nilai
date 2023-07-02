@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<math.h>
+
+
+void welcome(){
+  printf("=========================================================\n");
+  printf("   S E L A M A T  D A T A N G  D I  P R O G R A M \n");
+  printf("MEMBANDINGKAN BILANGAN INTEGER DAN MENGELUARKAN PESAN\n");
+  printf("=========================================================\n");
+}
+
+int main(){
+    int a,b;
+    char j;
+    welcome();
+
+
+do {
+    printf("Masukkan nilai integer a : ");
+    scanf("%d",&a);
+    printf("Masukkan nilai integer b : ");
+    scanf("%d",&b);
+
+    if (a > b ){
+    printf("Nilai A lebih besar dari nilai B\n");
+    }
+
+
+    else if (a < b){
+    printf("Nilai A lebih kecil dari nilai B\n");
+    }
+
+    else if (a == b){
+    printf("Nilai A sama dengan nilai B\n");
+    }
+printf("=================================================\n");
+printf("mau coba lagi ? [Y/N] ");
+scanf("%s", &j);
+}
+while (j == 'Y' || j == 'y');
+print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+printf("Terima kasih telat memakai program ini\n");
+printf("Made by Ikkoc_awinata\n");
+}
