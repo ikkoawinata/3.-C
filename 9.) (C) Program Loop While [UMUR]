@@ -1,0 +1,44 @@
+ #include<stdio.h>
+
+void welcome(){
+    printf("================================================================\n");
+    printf("               S E L A M A T   D A T A N G   D I                \n");
+    printf("             PERULANGAN WHILE DAN PERCANGAN IF ELSE             \n");
+    printf("                        U   M   U   R                           \n" ;
+    printf("================================================================\n");
+}
+
+int main(){
+    int umur;
+    char j;
+    welcome();
+
+do{
+    printf("Umur anda berapa sekarang : ");
+    scanf("%d", &umur);
+
+    while ((umur < 11) || (umur >=100)){
+    printf("saya tidak yakin umur anda : %d tahun\n", umur);
+    printf("Silahkan diulangi....\n");
+
+    printf("Umur anda berapa sekarang : ");
+    scanf("%d", &umur);
+    }
+printf("");
+  if ((umur > 12 ) && (umur < 19)){
+        printf(" wahh anda baru beranjak remaja \n");
+        printf(" gunakan waktu sebaik-baiknya yak\n");
+}
+   if ((umur >= 19) && (umur <= 100)){
+        printf( " Anda sudah beranjak tua \n" );
+        printf(" jadilah sesorang yang dewasa \n" );
+    }
+printf("");
+    printf("mau coba program lagi ? [Y/N] ");
+    scanf("%s", &j);
+}
+    while (j == 'Y' || j == 'y');
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("Terima kasih telah memakai program ini\n");
+    printf("Made by Ikkoc_awinata");
+}
