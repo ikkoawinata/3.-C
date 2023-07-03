@@ -1,0 +1,164 @@
+#include<stdio.h>
+#include<string.h>
+
+
+
+void sambutan(){
+    printf("=================================================================================================\n");
+    printf("||\t\t\t SELAMAT DATANG DI IKKO AWINATA CELL\t\t                         ||\n");
+    printf("||\t\t\tSilahkan Tentukan Pilihan Anda di Bawah Ini                              ||\n");
+}
+
+void tabel(){
+    printf("==================================================================================================\n");
+    printf("No.||\t\t Nama Jasa\t\t\t ||\t\t  Harga Satuan\t\t\t|| \n");
+    printf("==================================================================================================\n");
+    printf("1. ||\t Edit Background Foto\t\t\t || Rp.\t\t\t\t\t  10.000||\n");
+    printf("2. ||\t printf hitam putih\t\t\t || Rp.\t\t\t\t\t   1.000||\n");
+    printf("3. ||\t printf Warna fulll\t\t\t || Rp. \t\t\t\t   2.500||\n");
+    printf("4. ||\t cetak foto 4x6 (1 foto get 5 pcs)\t || Rp.\t\t\t\t\t   7.000||\n");
+    printf("5. ||\t cetak foto 3x4 (1 foto get 6 pcs)\t || Rp.\t\t\t\t\t   7.000||\n");
+    printf("6. ||\t cetak foto 2x3 (1 foto get 6 pcs)\t || Rp.\t\t\t\t\t   7.000||\n");
+    printf("7. ||\t Pengetikan / lembar           \t\t || Rp.\t\t\t\t\t   5.000||\n");
+    printf("8. ||\t Laminating / lembar            \t || Rp.\t\t\t\t\t   5.000||\n");
+    printf("9. ||\t Pulsa hp     \t\t\t\t || Rp.\t\t\t\t          +3.000||\n");
+    printf("10.||\t token listrik  \t\t\t || Rp.\t\t\t\t          +3.000||\n");
+    printf("==================================================================================================\n");
+    printf("\t\t\t\t\t Made by Ikko Awinata \t\t\t\t\t \n");
+    printf("==================================================================================================\n");
+}
+
+int main(){
+sambutan();
+tabel();
+    int m, pilihan, fotobg, printcol, print,cetakfoto,pengetikan,laminating, hasil,total, pulsa, token, hasil1,hasil2,hasil3,hasil4,hasil5,hasil6,hasil7,hasil8,hasil9,hasil10;
+    char j;
+
+
+do{
+printf("Anda mau apa [1/2/3/4/5/6/7/8/9/10] :");
+scanf("%d", &m);
+
+
+switch (m){
+case 1:
+    printf("----- 1.) ANDA MEMILIH EDIT BACKGROUND FOTO -----  \n");
+    printf("----------------------------------------\n");
+    printf("Anda mau edit berapa foto ? ");
+    scanf("%d",&fotobg);
+    hasil1 = fotobg*10000;
+    printf(" Total harganya adalah : %d\n ",hasil1);
+    break;
+
+
+    case 2:
+    printf("----- 2.) ANDA MEMILIH PRINT HITAM PUTIH  -----  \n");
+    printf("----------------------------------------\n");
+    printf(" Anda mau print berapa lembar  ? ");
+    scanf("%d",&print);
+    hasil2 = print*1000;
+    printf(" Total harganya adalah : %d \n",hasil2);
+    break;
+
+
+
+ case 3:
+    printf("----- 3.) ANDA MEMILIH PRINT FULL COLOR  -----  \n");
+    printf("----------------------------------------\n");
+    printf(" Anda mau print berapa lembar  ? ");
+    scanf("%d",&printcol);
+    hasil3 = printcol*2500;
+    printf(" Total harganya adalah : %d \n",hasil3);
+    break;
+
+
+
+    case 4:
+    printf("----- 4.) ANDA MEMILIH CETAK FOTO 4X6 (1 foto get 5 pcs)  -----  \n");
+    printf("-----------------------------------------------------------------\n");
+    printf(" Silahkan kirim fotonya (masukkan angka) : ");
+    scanf("%d",&cetakfoto);
+    hasil4 = cetakfoto*7000;
+    printf(" Total harganya adalah : %d \n",hasil4);
+
+
+
+        case 5:
+    printf("----- 5.) ANDA MEMILIH CETAK FOTO 3X4 (1 foto get 6 pcs)  -----  \n");
+    printf("-----------------------------------------------------------------\n");
+    printf(" Silahkan kirim fotonya (masukkan angka) : ");
+    scanf("%d",&cetakfoto);
+    hasil5 = cetakfoto*7000;
+    printf(" Total harganya adalah : %d\n ",hasil5);
+    break;
+
+
+
+    
+        case 6:
+    printf("----- 6.) ANDA MEMILIH CEATK FOTO 2X3 (1 foto get 6 pcs)  -----  \n");
+    printf("-----------------------------------------------------------------\n");
+    printf(" Silahkan kirim fotonya (masukkan angka) : ");
+    scanf("%d",&cetakfoto);
+    hasil6 = cetakfoto*7000;
+    printf(" Total harganya adalah : %d \n",hasil6);
+    break;
+
+
+
+          case 7:
+    printf("----- 7.) ANDA MEMILIH PENGETIKAN  -----  \n");
+    printf("------------------------------------------\n");
+    printf("Berapa halaman yang mau diketik? : ");
+    scanf("%d",&pengetikan);
+    hasil7 = pengetikan*5000;
+    printf(" Total harganya adalah : %d\n ",hasil7);
+    break;
+
+
+
+     case 8:
+    printf("----- 8.) ANDA MEMILIH LAMINATING   -----  \n");
+    printf("------------------------------------------\n");
+    printf("Berapa lembar yang mau dilaminating ? ");
+    scanf("%d",&laminating);
+    hasil8 = laminating*5000;
+    printf(" Total harganya adalah : %d \n",hasil8);
+    break;
+
+
+     case 9:
+    printf("----- 9.) ANDA MEMILIH BELI PULSA -----  \n");
+    printf("------------------------------------------\n");
+    printf("Beli pulsa berapa  : ");
+    scanf("%d",&pulsa);
+  hasil9 = (pulsa*1) + 3000;
+    printf(" Total harganya adalah : %d \n",hasil9);
+    break;
+
+
+
+    
+     case 10:
+    printf("----- 10.) ANDA MEMILIH TOKEN LISTRIK-----  \n");
+    printf("------------------------------------------\n");
+    printf("Beli token berapa : ");
+    scanf("%d",&token);
+  hasil10 = (token*1) + 3000;
+    printf(" Total harganya adalah : %d \n",hasil10);
+    break;
+
+
+default:
+printf("pilihan tidak sesuai. silahkan pilih sesuai dengan yang ada di tabel\n");
+    break;
+}
+printf("Mau coba program lagi ? [Y/N]: ");
+scanf("%s", &j);
+    
+}
+while (j == 'Y' || j == 'y');
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");;
+printf("Terima kasih telah menggunakan program ini\n");
+printf("Made by Ikkoc_awinata");
+}
