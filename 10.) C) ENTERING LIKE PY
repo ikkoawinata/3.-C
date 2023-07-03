@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+
+void welcome(){
+
+
+   printf("===========================================================\n");
+   printf ("            P    R    O    G     R     A     M            \n");
+   printf("                 ENTERING LIKE PYTHON                    \n");
+   printf("===========================================================\n");
+}
+
+
+
+int main() {
+   char input[100];
+   welcome();
+   printf(" ");
+   fgets(input, sizeof(input), stdin);
+   printf("i love you ");
+   return 0;
+}
