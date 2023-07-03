@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+   char input[100];
+   printf(" ");
+   fgets(input, sizeof(input), stdin);
+   printf("i love you ");
+   return 0;
+}
