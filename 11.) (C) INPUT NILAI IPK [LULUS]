@@ -1,0 +1,59 @@
+#include<stdio.h>
+#include<string.h>
+
+
+void welcome(){
+    printf("===============================================================\n");
+    printf("       S E L A M A T  D A T A N G  D I  P R O G R A M \n");
+    printf("                 MENENTUKAN NILAI PREDIKAT IPK\n");
+    printf("===============================================================\n");
+}
+
+
+
+int main(){
+int NIM, ket;
+float ipk;
+char mhs[10];
+char j;
+welcome();
+
+
+do{
+printf(" Masukkan Nama Mahasiswa : ");
+scanf("%s", &mhs);
+printf(" Masukkan NIM Mahasiswa : ");
+scanf("%d", &NIM);
+printf(" Masukkan IPK Mahasiswa : ");
+scanf("%f", &ipk);
+printf("");
+
+
+if(ipk >= 4.00){
+
+    printf("saudara %s dengan NIM %d dinyatakan lulus dengan predikat CUMLAUDE dengan mendapatkan nilai %f\n ", mhs, NIM, ipk, ket);
+}
+
+else if(ipk >= 3.49){
+    ket = 'SANGAT BAIK';
+    printf("saudara %s dengan NIM %d dinyatakan lulus dengan mendapatkan nilai %f\n ", mhs, NIM, ipk, ket);
+
+}
+else if(ipk >= 1.99){
+    ket = 'TIDAK LULUS';
+    printf("saudara %s dengan NIM %d dinyatakan lulus dengan mendapatkan nilai %f \n", mhs, NIM, ipk, ket);
+}
+
+else if(ipk >= 2.99){
+    ket = 'MENGULANG';
+    printf("saudara %s dengan NIM %d dinyatakan lulus dengan mendapatkan nilai %f \n", mhs, NIM, ipk, ket);
+}
+else if(ipk >= 0.99){
+    ket = 'TIDAK LULUS';
+    printf("saudara %s dengan NIM %d dinyatakan lulus dengan mendapatkan nilai %f\n ", mhs, NIM, ipk, ket);
+}
+printf("Mau coba program lagi ? [Y/N]: ");
+scanf("&s", &j);
+}
+while (j == 'Y' || j == 'y');
+}
