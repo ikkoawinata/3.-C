@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<string.h>
+
+
+void welcome(){
+    printf("===============================================================\n");
+    printf("       S E L A M A T  D A T A N G  D I  P R O G R A M \n");
+    printf("              PROGRAM PEMBAGIAN MENGELUARKAN NOTE\n");
+    printf("===============================================================\n");
+}
+
+
+
+int main(){
+//int a,b;
+float hasil,a,b;
+char j;
+welcome();
+
+
+do{
+printf(" Masukkan biilangan a (pembilang) : ");
+scanf("%f", &a);
+printf(" Masukkan biilangan b (pembilang) : ");
+scanf("%f", &b);
+printf("");
+
+if (b == 0){
+    printf("Tidak dapat bagi dengan angka nol, maka hasilnya tetap\n");
+}
+
+else{
+hasil = a/b;
+printf("Hasil dari pembagian %f / %f = %f\n",a,b,hasil);
+}
+
+printf("Mau coba program lagi ? [Y/N]: ");
+scanf("%s", &j);
+}
+while (j == 'Y' || j == 'y');
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+printf("Terima kasih telah menggunakan program ini");
+printf("Made by Ikkoc_awinata");
+}
+
