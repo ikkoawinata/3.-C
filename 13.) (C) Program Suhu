@@ -1,0 +1,172 @@
+#include<stdio.h>
+#include<string.h>
+
+
+void welcome(){
+    printf("===============================================================\n");;
+    printf("       S E L A M A T  D A T A N G  D I  P R O G R A M \n");;
+    printf("             M E N E N T U K A N    S U H U\n");;
+    printf("===============================================================\n");;
+}
+
+void table(){
+    printf("========================================\n");
+    printf("No.|             Nama Suhu              |\n");
+    printf("========================================\n");
+    printf("1  .| Derajat Celcius    -> Fahrenheit  |\n");
+    printf("2  .| Derajat Fahrenheit -> Celcius     |\n");
+    printf("3  .| Derajat Reamur     -> Fahrenheit  |\n");
+    printf("4  .| Derajat Fahrenheit -> Reamur      |\n");
+    printf("5  .| Derajat Reamur     -> Celcius     |\n");
+    printf("6  .| Derajat Celcius    -> Reamur      |\n");
+    printf("7  .| Derajat Kelvin     -> Celcius     |\n");
+    printf("8  .| Derajat Celcius    -> Kelvin      |\n");
+    printf("9  .| Derajat Kelvin     -> Fahrenheit  |\n");
+    printf("10 .| Derajat Fahrenheit -> Kelvin      |\n");
+    printf("11 .| Derajat Kelvin     -> Reamur      |\n");
+    printf("12 .| Derajat Reamur     -> Kelvin      |\n");
+    printf("========================================\n");
+}
+
+
+int main(){
+char j;
+int pil;
+float c,r,f,k;
+welcome();
+table();
+
+
+do{
+printf("Masukkan Pilihan Anda Sesuai Dengan Yang di tabel : " );
+scanf("%d", &pil);
+printf("");
+
+switch (pil){
+case 1:
+ printf("-------- 1.) Anda memilih Celcius -> Fahrenheit --------\n");
+ printf("Masukkan suhu celcius yang diketahui : ");
+ scanf("%f", &c);
+ f = (9.0/5.0 * c) + 32;
+ printf("Rumusnya yaitu : 9/5 * F + (32) = 9/5 * %f + (32) = %f\n", c,f);
+ break;
+
+
+case 2:
+ printf("-------- 2.) Anda memilih Fahrenheit  -> Celcius --------\n");
+ printf("Masukkan suhu fahrenheit yang diketahui : ");
+ scanf("%f", &f);
+ c = 5.0/9.0 * (f - (32));
+ printf("Rumusnya yaitu : 9/5 * C + (32) = 9/5 * %f + (32) = %f\n", f,c);
+ break;
+
+
+ case 3:
+ printf("-------- 3.) Anda memilih Reamur -> Fahrenheit --------\n");
+ printf("Masukkan suhu reamur yang diketahui : ");
+ scanf("%f", &r);
+ f = (9.0/4.0 * r) + (32);
+ printf("Rumusnya yaitu : 9/4 * R + (32) = 9/4 * %f + (32) = %f\n", r,f);
+break;
+
+ 
+ case 4:
+ printf("-------- 4.) Anda memilih Fahrenheit -> Reamur --------\n");
+ printf("Masukkan suhu fahrenheit yang diketahui : ");
+ scanf("%f", &f);
+ r = 4.0/9.0 *(f - 32);
+ printf("Rumusnya yaitu : 4/9 * R + (32) = 4/9 * %f + (32) = %f\n", f,r);
+break;
+
+  case 5:
+ printf("--------  5 .) Anda memilih Reamur -> Celcius  --------\n");
+ printf("Masukkan suhu reamur yang diketahui : ");
+ scanf("%f", &r);
+  c = 5.0/4.0 * r;
+ printf("Rumusnya yaitu : 5/4 * r = 5/4 * %f = %f\n ", r,c);
+break;
+
+
+   case 6:
+ printf("--------  6 .) Anda memilih Celcius -> Reamur  --------\n");
+ printf("Masukkan suhu celcius yang diketahui : ");
+ scanf("%f", &c);
+ r = 4.0/5.0 * c;
+ printf("Rumusnya yaitu : 4/5 * r = 4/5 * %f = %f\n ", c,r);
+ break;
+
+
+
+case 7:
+ printf("-------- 7 .) Anda memilih Kelvin -> Celcius  --------\n");
+ printf("Masukkan suhu kelvm yang diketahui : ");
+ scanf("%f", &k);
+  c = 273 - k;
+ printf("Rumusnya yaitu : 273 - r = 273 - %f = %f\n ", k,c);
+ break;
+ 
+
+
+ case 8:
+ printf("-------- 8 .) Anda memilih Celcius -> Kelvin   --------\n");
+ printf("Masukkan suhu celcius yang diketahui : ");
+ scanf("%f", &c);
+  k = 273 - c;
+ printf("Rumusnya yaitu : 273 - r = 273 - %f = %f\n ", c,k);
+ break;
+
+
+
+  case 9:
+ printf("-------- 9.) Anda memilih Kelvin -> Fahrenheit --------\n");
+ printf("Masukkan suhu kelvin yang diketahui : ");
+ scanf("%f", &k);
+  f = 9.0/5.0 * (k-273)+32;
+ printf("Rumusnya yaitu : 9/5 * (k - 273) + 32 = 9/5 * (%f * 273) + 32 = %f\n",k,f);
+ break;
+
+
+
+  case 10:
+ printf("--------10 .) Anda memilih Fahrenheit -> Kelvin  --------\n");
+ printf("Masukkan suhu fahrenheit yang diketahui : ");
+ scanf("%f", &f);
+ k = 5.0/9.0 * (f - 32) + 273;
+ printf("Rumusnya yaitu : 5/9 * (f - 32) + 273 = 5/5 * (%f - 32) + 273 = %f\n",f,k);
+ break;
+
+
+
+ case 11:
+ printf("--------11 .) Anda memilih Kelvin -> Reamur --------\n");
+ printf("Masukkan suhu fahrenheit yang diketahui : ");
+ scanf("%f", &k);
+ r = 4.0/5.0 * (k  - 273);
+ printf("Rumusnya yaitu : 5/9 * (f - 32) + 273 = 5/5 * (%f - 32) + 273 = %f\n",f,k);
+ break;
+
+
+
+ case 12:
+ printf("--------11 .) Anda memilih Kelvin -> Reamur --------\n");
+ printf("Masukkan suhu fahrenheit yang diketahui : ");
+ scanf("%f", &k);
+ r = 4.0/5.0 * (k  - 273);
+ printf("Rumusnya yaitu : 5/9 * (f - 32) + 273 = 5/5 * (%f - 32) + 273 = %f\n",f,k);
+ break;
+
+
+default:
+printf("Pilihan tidak sesuai. silahkan pilih sesuai pada tabel\n");
+}
+
+
+printf("Mau coba program lagi ? [Y/N]: ");
+scanf("%s", &j);
+}
+while (j == 'Y' || j == 'y');
+printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");;
+printf("Terima kasih telah menggunakan program ini\n");
+printf("Made by Ikkoc_awinata");
+}
+
