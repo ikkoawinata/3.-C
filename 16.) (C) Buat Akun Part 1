@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+
+void loginSystem() {
+	
+	printf("==========================================================\n");
+	printf("              SELAMAT DATANG DI PROGRAM                   \n");
+	printf("            PEMBUATAN AKUN DAN PASSWORD                   \n");
+	printf("==========================================================\n");
+    int i;
+    string user, pass, login, x, y, z;
+    char j;
+
+do{
+
+    printf("Silahkan Buat Akun Dulu yah\n");
+    printf("Username : ");
+    cin >> user;
+    printf("Password : ");
+    cin >> pass;
+    system("cls");
+    printf("Akun Sudah Dibuat, Silakan Login Untuk Masuk\n");
+    do {
+        printf("Username : ");
+        cin >> x;
+        printf("Password : ");
+        cin >> y;
+
+        if (x == user && y == pass) {
+            login = "Berhasil";
+            printf("YEYY ANDA BERHASIL LOGIN\n");
+            printf("========================================================\n");
+            printf("Coba Anda Masukkan Username & Password yang tidak sesuai sebanyak 3 kali\n");
+        }
+        else if (x != user && y != pass) {
+            printf("Username atau Password Anda Salah\n");
+            i++;
+        }
+
+    } while (i < 3);
+        
+  
+
+    if (login == "berhasil") {
+        system("cls");
+        printf("YEEYY ANDA TELAH BERHASIL LOGIN\n");
+    }
+    else {
+        printf("Anda Telah 3x Salah Username & Password\n");
+        printf("Maaf Akun Anda Kami Blokir Sementara\n");
+        printf("Untuk Lebih lanjut, Hubungi Nomor Dia. Jika Tidak Ada Respon Lebih Baik Mundur Saja.\n");
+    }
+    printf("Sekian Dan Terima Kasih\n");
+      printf ("coba program lagi [Y/N] : ");
+    cin >> j;
+    
+}
+while (j == 'y' || j == 'y');
+}
+
+int main() {
+    loginSystem();
+    return 0;
+}
