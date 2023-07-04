@@ -1,0 +1,498 @@
+#include<stdio.h>
+#include<string.h>
+
+
+void sambutan(){
+    printf ("================================================================================\n");
+    printf ("       S E L A M A T   D A T A N G   D I   P R O G R A M \n" );
+    printf ("                  CONVERT SATUAN BERAT \n" );
+    printf ("================================================================================\n");
+}
+
+void table(){
+    printf ("================================================================================\n");
+    printf ("NO |                 SATUAN PANJANG               \n");
+    printf ("================================================================================\n");
+    printf ("1.  | KG (Kilometer);       ->   HG (Hektometer);                                 |\n");
+    printf ("2.  | KG (Kilometer);       ->   DAG (Dekameter);                                 |\n");
+    printf ("3.  | KG (Kilometer);       ->   G (meter);                                       |\n");
+    printf ("4.  | KG (Kilometer);       ->   DG (Desimeter);                                  |\n");
+    printf ("5.  | KG (Kilometer);       ->   CG (Centimeter);                                 |\n");
+    printf ("6.  | KG (Kilometer);       ->   GG (Gilimeter);                                  |\n");
+    printf ("7.  | HG (Hektometer);      ->   KG (Kilometer);                                  |\n");
+    printf ("8.  | HG (Hektometer);      ->   DAG (Dekameter);                                 |\n");
+    printf ("9.  | HG (Hektometer);      ->   G (meter);                                       |\n");
+    printf ("10. | HG (Hektometer);      ->   DG (Desimeter);                                  |\n");
+    printf ("11. | HG (Hektometer);      ->   CG (Centimeter);                                 |\n");
+    printf ("12. | HG (Hektometer);      ->   GG (Gilimeter);                                  |\n");
+    printf ("13. | DAG (Dekameter);      ->   KG (Kilometer);                                  |\n");
+    printf ("14. | DAG (Dekameter);      ->   HG (Hektometer);                                 |\n");
+    printf ("15. | DAG (Dekameter);      ->   G (meter);                                       |\n");
+    printf ("16. | DAG (Dekameter);      ->   DG (Desimeter);                                  |\n");
+    printf ("17. | DAG (Dekameter);      ->   CG (Centimeter);                                 |\n");
+    printf ("18. | DAG (Dekameter);      ->   GG (Gilimeter);                                  |\n");
+    printf ("19. | G (meter);            ->   KG (Kilometer);                                  |\n");
+    printf ("20. | G (meter);            ->   HG (Hektometer);                                 |\n");
+    printf ("21. | G (meter);            ->   DAG (Dekameter);                                 |\n");
+    printf ("22. | G (meter);            ->   DG (Desimeter);                                  |\n");
+    printf ("23. | G (meter);            ->   CG (Centimeter);                                 |\n");
+    printf ("24. | G (meter);            ->   GG (Gilieter);                                   |\n");
+    printf ("25. | DG (Desimeter);       ->   KG (Kilometer);                                  |\n");
+    printf ("26. | DG (Desimeter);       ->   HG (Hektometer);                                 |\n");
+    printf ("27. | DG (Desimeter);       ->   DAG (Dekameter);                                 |\n");
+    printf ("28. | DG (Desimeter);       ->   G (meter);                                       |\n");
+    printf ("29. | DG (Desimeter);       ->   CG (Centimeter);                                 |\n");
+    printf ("30. | DG (Desimeter);       ->   GG (Gilimeter);                                  |\n");
+    printf ("31. | CG (Centimeter);      ->   KG (Kilometer);                                  |\n");
+    printf ("32. | CG (Centimeter);      ->   HG (Hektometer);                                 |\n");
+    printf ("33. | CG (Centimeter);      ->   DAG (Dekameter);                                 |\n");
+    printf ("34. | CG (Centimeter);      ->   G (meter);                                       |\n");
+    printf ("35. | CG (Centimeter);      ->   DG (Desimeter);                                  |\n");
+    printf ("36. | CG (Centimeter);      ->   GG (Gilimeter);                                  |\n");
+    printf ("37. | GG (Gilimeter);       ->   KG (Kilometer);                                  |\n");
+    printf ("38. | GG (Gilimeter);       ->   HG (Hektometer);                                 |\n");
+    printf ("39. | GG (Gilimeter);       ->   DAG (Dekameter);                                 |\n");
+    printf ("40. | GG (Gilimeter);       ->   G (meter);                                       |\n");
+    printf ("41. | GG (Gilimeter);       ->   DG (Desimeter);                                  |\n");
+    printf ("42. | GG (Gilimeter);       ->   CG (Centimeter);                                 |\n");
+    printf ("================================================================================\n");
+}
+
+
+
+    int main(){
+        int pil;
+        float user, rumus;
+        char j ;
+sambutan();
+
+
+do{
+table();
+printf("silahkan pilih sesuai yg anda cari pada table diatas : ");
+scanf("%d", &pil);
+
+switch (pil){
+case 1:
+   printf("------ 1.) KG -> HG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user * 10;
+   printf("hasilnya adalah : %f * 10 = %f\n ",user, rumus);
+    break;
+
+
+case 2:
+   printf("------ 2.) KG -> DAM -------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user * 100 ;
+     printf("hasilnya adalah : %f * 100 = %f\n ",user, rumus);
+   break;
+
+
+
+case 3:
+   printf("------ 3.) KG -> G --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user * 1000 ;
+     printf("hasilnya adalah : %f * 1000 = %f\n ",user, rumus);
+   break;
+
+
+
+case 4:
+   printf(" ------ 4.) KG -> DG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user * 10000 ;
+      printf("hasilnya adalah : %f * 10000 = %f\n ",user, rumus);
+break;
+
+
+
+case 5:
+   printf(" ------ 5.) KG -> CG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user * 100000 ;
+      printf("hasilnya adalah : %f * 100000 = %f\n ",user, rumus);
+   break;
+
+
+
+   case 6:
+   printf(" ------ 6.) KG -> MG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user * 1000000 ;
+     printf("hasilnya adalah : %f * 1000000 = %f\n ",user, rumus);
+   break;
+
+
+
+     case 7:
+   printf(" ------ 7.) HG -> KG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user / 10 ;
+    printf("hasilnya adalah : %f / 10 = %f\n ",user, rumus);
+   break;
+
+
+
+        case 8:
+   printf(" ------ 8.) HG -> DAM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user * 10 ;
+    printf("hasilnya adalah : %f * 10 = %f\n ",user, rumus);
+   break;
+   
+
+
+        case 9:
+   printf(" ------ 9.) HG -> M -------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user * 100 ;
+    printf("hasilnya adalah : %f * 100 = %f\n ",user, rumus);
+   break;
+
+
+
+     case 10:
+   printf(" ------ 10.) HG -> DM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user * 1000 ;
+    printf("hasilnya adalah : %f * 1000 = %f\n ",user, rumus);
+   break;
+
+
+
+   case 11:
+   printf(" ------ 11.) HG -> CM -------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user * 10000 ;
+    printf("hasilnya adalah : %f * 10000 = %f\n ",user, rumus);
+   break;
+
+
+
+  case 12:
+   printf(" ------ 12.) HG -> MM -------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+     rumus = user * 100000 ;
+    printf("hasilnya adalah : %f * 10000 = %f\n ",user, rumus);
+   break;
+
+
+
+ case 13:
+   printf(" ------ 13.) DAM -> KG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user / 100 ;
+    printf("hasilnya adalah : %f / 100 = %f\n ",user, rumus);
+   break;
+
+
+
+ case 14:
+   printf(" ------ 14.)DAM -> HG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user / 10 ;
+    printf("hasilnya adalah : %f / 10 = %f\n ",user, rumus);
+   break;
+
+
+   case 15:
+   printf(" ------ 15.)DAM -> M --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user * 10 ;
+    printf("hasilnya adalah : %f * 10 = %f\n ",user, rumus);
+   break;
+
+
+case 16:
+   printf(" ------ 16.) DAM -> DM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user * 100 ;
+    printf("hasilnya adalah : %f * 100 = %f\n ",user, rumus);
+   break;
+
+
+
+case 17:
+   printf(" ------ 17.) DAM -> CM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user * 1000 ;
+    printf("hasilnya adalah : %f * 1000 = %f\n ",user, rumus);
+   break;
+
+
+
+case 18:
+   printf(" ------ 18.) DAM -> MM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user * 10000 ;
+    printf("hasilnya adalah : %f * 10000 = %f\n ",user, rumus);
+   break;
+
+
+
+case 19:
+   printf(" ------ 19.)M -> KG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user / 1000 ;
+    printf("hasilnya adalah : %f / 1000 = %f\n ",user, rumus);
+   break;
+
+
+case 20:
+   printf(" ------ 20.)M -> HG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user / 100 ;
+    printf("hasilnya adalah : %f / 100 = %f\n ",user, rumus);
+   break;
+
+
+case 21:
+   printf("  ------ 21.)M -> DAM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+ rumus = user / 10 ;
+    printf("hasilnya adalah : %f / 10 = %f\n ",user, rumus);
+   break;
+
+
+case 22:
+   printf(" ------ 22.)M -> DM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+     rumus = user * 10 ;
+    printf("hasilnya adalah : %f * 10 = %f\n ",user, rumus);
+   break;
+
+
+
+   case 23:
+   printf("  ------ 23.) M -> CM -------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+     rumus = user * 100 ;
+    printf("hasilnya adalah : %f * 100 = %f\n ",user, rumus);
+   break;
+
+
+  case 24:
+   printf(" ------ 24.) M -> MM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+      rumus = user * 1000 ;
+    printf("hasilnya adalah : %f * 1000 = %f\n ",user, rumus);
+   break;
+
+
+
+  case 25:
+   printf(" ------ 25.) DM -> KG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+       rumus = user * 10000 ;
+    printf("hasilnya adalah : %f * 10000 = %f\n ",user, rumus);
+   break;
+
+
+
+  case 26:
+   printf(" ------ 26.) DM -> HG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user / 1000 ;
+    printf("hasilnya adalah : %f / 1000 = %f\n ",user, rumus);
+   break;
+
+
+ case 27:
+   printf(" ------ 27.) DM -> DAM ---------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+      rumus = user / 100 ;
+    printf("hasilnya adalah : %f / 100 = %f\n ",user, rumus);
+   break;
+
+
+
+case 28:
+   printf(" ------ 28.) DM -> M -------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user / 10 ;
+    printf("hasilnya adalah : %f / 10 = %f\n ",user, rumus);
+   break;
+
+
+
+case 29:
+   printf(" ------ 29.) DM -> CM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user * 10 ;
+    printf("hasilnya adalah : %f * 10 = %f\n ",user, rumus);
+   break;
+
+
+
+case 30:
+   printf(" ------ 30.) DM -> MM -------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user * 100 ;
+    printf("hasilnya adalah : %f * 100 = %f\n ",user, rumus);
+   break;
+
+
+case 31:
+   printf(" ------ 31.) CM -> KG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user / 100000 ;
+    printf("hasilnya adalah : %f / 100000 = %f\n ",user, rumus);
+   break;
+
+
+
+case 32:
+   printf("  ------ 32.) CM -> HG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user / 10000 ;
+    printf("hasilnya adalah : %f / 10000 = %f\n ",user, rumus);
+   break;
+
+
+
+case 33:
+   printf(" ------ 33.) CM -> DAM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user / 1000 ;
+    printf("hasilnya adalah : %f / 1000 = %f\n ",user, rumus);
+   break;
+
+
+
+case 34:
+   printf(" ------ 34.) CM -> M --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user / 100 ;
+    printf("hasilnya adalah : %f / 100 = %f\n ",user, rumus);
+   break;
+
+
+
+case 35:
+   printf(" ------ 35.) CM -> DM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user / 10 ;
+    printf("hasilnya adalah : %f / 10 = %f\n ",user, rumus);
+   break;
+
+
+
+case 36:
+   printf(" ------ 36.) CM -> MM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+    rumus = user * 10 ;
+    printf("hasilnya adalah : %f * 10 = %f\n ",user, rumus);
+   break;
+
+
+
+case 37:
+   printf(" ----- 37.) MM -> KG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+     rumus = user / 1000000 ;
+    printf("hasilnya adalah : %f / 1000000 = %f\n ",user, rumus);
+   break;
+
+
+case 38:
+   printf("------ 38.) MM -> HG --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user / 100000 ;
+    printf("hasilnya adalah : %f / 100000 = %f\n ",user, rumus);
+   break;
+
+
+case 39:
+   printf("------- 39.) MM -> DAM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user / 10000 ;
+    printf("hasilnya adalah : %f / 10000 = %f\n ",user, rumus);
+   break;
+
+
+case 40:
+   printf("------ 40.) MM  -> M --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user / 1000 ;
+    printf("hasilnya adalah : %f / 1000 = %f\n ",user, rumus);
+   break;
+
+
+
+case 41:
+   printf("------ 41.) MM -> DM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user / 100 ;
+    printf("hasilnya adalah : %f / 100 = %f\n ",user, rumus);
+   break;
+
+
+
+case 42:
+   printf("------ 42.) MM -> CM --------\n");
+   printf("Masukkan angka : ");
+   scanf("%f", &user);
+   rumus = user / 10 ;
+    printf("hasilnya adalah : %f / 10 = %f\n ",user, rumus);
+   break;
+
+
+default:
+    printf ( "Pilihan tidak sesuai dengan tabel\n " );
+    printf ( "Silahkan masukkan pilihan anda sesuai dengan tabel\n " );
+    break;
+
+}
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("mau coba program lagi ? [Y/N] : ");
+    scanf("%s", &j);
+    system ("cls");
+
+    }while (j == 'Y' || j == 'y');
+    printf("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("Terima kasih menggunakan program ini \n");
+    printf("made by Ikkoc_awinata\n");
+    }
