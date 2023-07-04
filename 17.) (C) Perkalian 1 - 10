@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+
+void welcome(){
+        printf("===============================================================\n");
+    printf("       S E L A M A T  D A T A N G  D I  P R O G R A M \n");
+    printf("              MULTIPLICATION / PERKALIAN 1 -10 \n");
+    printf("===============================================================\n");
+}
+
+void printMultiplicationTable() {
+    for (int i = 1; i <= 10; i++) {
+        for (int j = 1; j <= 10; j++) {
+            printf("| %d  ", i * j);
+        }
+        printf(" \n ");
+    }
+}
+
+int main() {
+    welcome();
+    printMultiplicationTable();
+    return 0;
+}
