@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+   char input[100];
+
+
+   printf("and i can still see it all \n");
+   fgets(input, sizeof(input), stdin);
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+    printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+
+    printf("\n");
+
+ fgets(input, sizeof(input), stdin);
+    printf("all of you, all of me \n");
+   fgets(input, sizeof(input), stdin);
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+    printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+ 
+
+  printf("\n");
+
+ fgets(input, sizeof(input), stdin);
+    printf("i once believed love would be\n");
+   fgets(input, sizeof(input), stdin);
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+   printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+    printf("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A\n");
+
+
+ fgets(input, sizeof(input), stdin);
+printf("\n");
+    fgets(input, sizeof(input), stdin);
+
+
+     
+   return 0;
+}
