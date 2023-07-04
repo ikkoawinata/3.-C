@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<string.h>
+
+
+void welcome(){
+printf("===========================================================\n");
+printf("    S E L A M A T  D A T A N G  D I  P R O G R A M \n");
+printf("    HARGA BELI, HARGA JUAL, DAN PENDAPATAN UNTUNG \n");
+printf("===========================================================\n");
+
+}
+
+
+int main(){
+    welcome();
+
+    int HJ,HB,PU;
+    char j;
+
+
+do{
+    printf("Masukkan harga beli barang : ");
+    scanf("%d", &HB);
+
+
+    printf("Hitung PU\n");
+    PU = HB * 30/100;
+    printf("Harga beli nya %d x 30 % = %d\n", HB, PU);
+    printf("Nilai dari pendapatam untung = %d rupiah \n", PU);
+
+
+    printf("\n");
+    printf("Hitung HJ\n");
+    HJ = PU + HB;
+    printf("Nilai hasil jual dari penjumlahan PU(%d) + HB(%d) = HJ(%d) ribu\n ", PU, HB, HJ);
+
+    printf("\n");
+    printf("Mau coba lagi : ");
+    scanf("%s", &j);
+}
+while (j=='Y' || j == 'y');
+    printf("Terima kasih telat memakai program ini\n");
+    printf("Made by Ikkoc_awinata");
+}
