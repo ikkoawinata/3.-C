@@ -125,7 +125,7 @@ int main() {
 
             case 9:
                 printf("\n ------ Air Mineral Unesa ------ \n");
-                printf(" Ketik ulang nama minuman yang dipilih [Mixue_Leon_Tea] : ");
+                printf(" Ketik ulang nama minuman yang dipilih [Air_Mineral_Unesa] : ");
                 scanf("%s", sembilan);
                 printf(" Mau Pesan Berapa ? ");
                 scanf("%d", &n);
