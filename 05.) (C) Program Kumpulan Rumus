@@ -54,7 +54,7 @@ void table(){
 
 int main(){
     char j;
-    float r,d,t,T, phi, Phi, rumusa, rumusb, jari, busur,sisi, keliling,L, panjang, lebar, alas,p,q, L_alas,L_segitiga,L_limas,LALAS,a,L_selimut,sisisegitiga,sqrt, akar,Lp_PS, rumus1, rumus2,rumus;
+    float pytagoras, r,d,t,T, phi, Phi, rumusa, rumusb, jari, busur,sisi, keliling,L, panjang, lebar, alas,p,q, L_alas,L_segitiga,L_limas,LALAS,a,L_selimut,sisisegitiga,sqrt, akar,Lp_PS, rumus1, rumus2,rumus;
     int pilihan, p1, L1, T1, rumusss, sisi1;
 
     sambutan();
