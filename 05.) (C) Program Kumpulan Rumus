@@ -387,34 +387,45 @@ int main(){
             scanf("%f",&r);
             printf("Masukkan sisi kerucut : ");
             scanf("%f",&sisi);
-            rumus1 = 22.0/7.0*r*sisi;
-            rumus2 = 3.14*r*sisi;
-            printf("hasil luas selimut (phi=22/7) : 22/7 * r * sisi =22/7 *  %f * %f = %f cm\n",r,sisi, rumus1);
-            printf("hasil luas selimut (phi=3.14) : 3.14 * r * sisi =3.14 *  %f * %f = %f cm\n",r,sisi, rumus2);
+            pytagoras = pow(r,2) + pow(sisi,2);
+            sqrt = pow(pytagoras, 0.5);
+            printf("hasil sisi segitiga yang hasilnya berbentuk akar %f adalah %f \n: ", pytagoras, sqrt);
+             printf(" akar dari %f adalah %f\n = ",pytagoras, sqrt);
+          rumus1 = 22/7*r*sqrt;
+        rumus2 = 3.14*r*sqrt;
+            printf("hasil luas selimut (phi=22/7) : 22/7 * r * sisi =22/7 *  %f * %f = %f cm\n",r,sqrt, rumus1);
+            printf("hasil luas selimut (phi=3.14) : 3.14 * r * sisi =3.14 *  %f * %f = %f cm\n",r,sqrt, rumus2);
     }
+
+
+
+
      else if (pilihan == 30){
             printf("---- 30.) MENGHITUNG LUAS PERMUKAAN KERUCUT----\n");
             printf("Masukkan jari-jari kerucut : ");
             scanf("%f",&r);
             printf("Masukkan sisi kerucut : ");
             scanf("%f",&sisi);
-            rumus1 = (22.0/7.0*r*sisi) + (22.0/7.0*(pow(r,2)));
-            rumus2 = (3.14*r*sisi) + (3.14*(pow(r,2)));
-            printf("hasil luas selimut (phi=22/7) : (22/7 * r * sisi) + (22/7 *(r pangkat 2)) =(22/7 * %f * %f) + (22/7 *(%f)) = %f\n", r,sisi, pow(r,2), rumus1);
-           printf("hasil luas selimut (phi=3.14) : (3.14 * r * sisi) + (3.14 *(r pangkat 2)) =(3.14 * %f * %f) + (3.14 *(%f)) = %f\n", r,sisi, pow(r,2), rumus2);
+            rumus1 = (22.0/7.0 * r *(r + sisi));
+            rumus2 = (3.14 * r *(r + sisi));
+        printf("hasil luas selimut (phi=22/7) : (22/7 * r *(r + sisi)) = 22/7 * %f * ( %f + %f) = %f\n",r,  r, sisi, rumus1);
+           printf("hasil luas selimut (phi=3.14) : (3.14 * r *(r + sisi)) = 3.14 * %f * ( %f + %f) = %f \n", r, r, sisi, rumus2);
+         
         
     }
        else if (pilihan == 31){
             printf("---- 31.) MENGHITUNG VOLUME KERUCUT----\n");
             printf("Masukkan jari-jari kerucut : ");
             scanf("%f",&r);
-            printf("Masukkan sisi kerucut : ");
+            printf("Masukkan tinggi kerucut : ");
             scanf("%f",&sisi);
-            rumus1 = (22.0/7.0*r*sisi) + (22.0/7.0*(pow(r,2)));
-            rumus2 = (3.14*r*sisi) + (3.14*(pow(r,2)));
-            printf("hasil luas selimut (phi=22/7) : (22/7 * r * sisi) + (22/7 *(r pangkat 2)) =(22/7 * %f * %f) + (22/7 *(%f)) = %f\n", r,sisi, pow(r,2), rumus1);
-           printf("hasil luas selimut (phi=3.14) : (3.14 * r * sisi) + (3.14 *(r pangkat 2)) =(3.14 * %f * %f) + (3.14 *(%f)) = %f\n", r,sisi, pow(r,2), rumus2);
+            rumus1 = 1.0/3.0 * 22.0/7.0 * pow(r,2) * sisi;
+            rumus2 = 1.0/3.0 * 3.14 * pow(r,2) * sisi;
+            printf("hasil volume selimut (phi=22/7) : 1/3 * 22/7 * r^2 * sisi = 1/3 * 22/7 * %f * %f = %f \n", pow(r,2), sisi, rumus1);
+            printf("hasil volume selimut (phi=22/7) : 1/3 * 22/7 * r^2 * sisi = 1/3 * 22/7 * %f * %f = %f\n ", pow(r,2), sisi, rumus2);
     }
+
+
      else if (pilihan == 32){
             printf("---- 32.) MENGHITUNG LUAS BOLA----\n");
             printf("Masukkan jari-jari bola : ");
@@ -424,6 +435,8 @@ int main(){
             printf("hasil luas selimut (phi=22/7) : 4 * 22/7 *(r pangkat 2) = 4 * 22/7 * %f = %f cm\n", pow(r,2), rumus1);
            printf("hasil luas selimut (phi=3.14) : 4 * 3.14 *(r pangkat 2) = 4 * 3.14 * %f = %f cm\n", pow(r,2), rumus2);
     }
+
+
      else if (pilihan == 33){
             printf("---- 33.) MENGHITUNG VOLUME BOLA----\n");
             printf("Masukkan jari-jari bola : ");
