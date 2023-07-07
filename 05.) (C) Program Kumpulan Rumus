@@ -443,8 +443,8 @@ int main(){
             scanf("%f",&r);
             rumus1 = 4.0/3.0*22.0/7.0*pow(r,3);
             rumus2 = 4.0/3.0*3.14*pow(r,3);
-            printf("hasil luas selimut (phi=22/7) : 4/3 * 22/7 *(r pangkat 2) = 4/3 * 22/7 * %f = %f cm\n", pow(r,3), rumus1);
-           printf("hasil luas selimut (phi=3.14) : 4/3 *  3.14 *(r pangkat 2) = 4/3 * 3.14 * %f = %f cm\n", pow(r,3), rumus2);
+            printf("hasil luas selimut (phi=22/7) : 4.0/3.0 * 22/7 *(r pangkat 2) = 4/3 * 22/7 * %f = %f cm\n", pow(r,3), rumus1);
+           printf("hasil luas selimut (phi=3.14) : 4.0/3.0 *  3.14 *(r pangkat 2) = 4/3 * 3.14 * %f = %f cm\n", pow(r,3), rumus2);
      }else
     printf("Pilihan tidak sesuai. silahkan pilih sesuai dengan table\n");
     printf("coba lagi ? [Y/N] : " );
