@@ -112,7 +112,7 @@ case 7:
  printf("Masukkan suhu celcius yang diketahui : ");
  scanf("%f", &c);
   k = 273 - c;
- printf("Rumusnya yaitu : 273 - r = 273 - %f = %f\n ", c,k);
+ printf("Rumusnya yaitu : 273 - c = 273 - %f = %f\n ", c,k);
  break;
 
 
