@@ -142,7 +142,7 @@ case 7:
  printf("Masukkan suhu fahrenheit yang diketahui : ");
  scanf("%f", &k);
  r = 4.0/5.0 * (k  - 273);
- printf("Rumusnya yaitu : 5/9 * (f - 32) + 273 = 5/5 * (%f - 32) + 273 = %f\n",f,k);
+ printf("Rumusnya yaitu : 4/5 * (f - 32) + 273 = 5/5 * (%f - 32) + 273 = %f\n",f,k);
  break;
 
 
@@ -152,7 +152,7 @@ case 7:
  printf("Masukkan suhu fahrenheit yang diketahui : ");
  scanf("%f", &k);
  r = 4.0/5.0 * (k  - 273);
- printf("Rumusnya yaitu : 5/9 * (f - 32) + 273 = 5/5 * (%f - 32) + 273 = %f\n",f,k);
+ printf("Rumusnya yaitu : 4/5 * (f - 32) + 273 = 5/5 * (%f - 32) + 273 = %f\n",f,k);
  break;
 
 
