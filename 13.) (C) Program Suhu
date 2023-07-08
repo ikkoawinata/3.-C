@@ -148,7 +148,7 @@ case 7:
 
 
  case 12:
- printf("--------11 .) Anda memilih Kelvin -> Reamur --------\n");
+ printf("--------12 .) Anda memilih Kelvin -> Reamur --------\n");
  printf("Masukkan suhu fahrenheit yang diketahui : ");
  scanf("%f", &k);
  r = 4.0/5.0 * (k  - 273);
