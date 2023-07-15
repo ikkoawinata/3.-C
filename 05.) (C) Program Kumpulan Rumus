@@ -281,8 +281,9 @@ int main(){
             scanf("%f",&LALAS);
             printf("Masukkan tinggi alas limas : ");
             scanf("%f",&T);
-            rumus =  1.0/3.0*LALAS*T;
-            printf("Rumusnya yaitu : Volume = 1/3 * Luas Alas * Tinggi = 1/3 * %f* %f = %f cm \n", LALAS, T, rumus);
+            L_alas = LALAS * LALAS;
+            rumus =  1.0/3.0*L_alas*T;
+            printf("Rumusnya yaitu : Volume = 1/3 * Luas Alas * Tinggi = 1/3 * %f* %f = %f cm \n", L_alas,T, rumus);
     }
 
      else if (pilihan == 22){
